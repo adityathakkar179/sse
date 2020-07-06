@@ -1,0 +1,38 @@
+<html>
+
+<body>
+      
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      
+        
+        
+    <table class="table" >
+            <thead class="thead-dark">
+              <tr>
+                <th scope="col">First Name</th>
+                <th scope="col">Last Name</th>
+                <th scope="col">Email</th>
+                <th scope="col">Number</th>
+                <th scope="col">Message</th>
+              </tr>
+            </thead>
+            <tbody>
+                    {% for x in udata %}
+              <tr>
+                    
+                <th scope="row">{{x.FirstName}}</th>
+                <td>{{x.LastName}}</td>
+                <td>{{x.Email}}</td>
+                <td>{{x.PhoneNumber}}</td>
+                <td>{{x.Message}}</td>
+
+              </tr>
+       
+              
+              {% endfor %}
+             
+            </tbody>
+          </table>
+
+</body>
+</html>
