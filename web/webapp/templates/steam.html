@@ -1,0 +1,251 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>SSE</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+  <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,700|Muli:300,400" rel="stylesheet">
+  <link rel="stylesheet" href="{% static 'fonts/icomoon/style.css'%}">
+
+  <link rel="stylesheet" href="{% static 'css/bootstrap.min.css'%}">
+  <link rel="stylesheet" href="{% static 'css/jquery-ui.css'%}">
+  <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css'%}">
+  <link rel="stylesheet" href="{% static 'css/owl.theme.default.min.css'%}">
+  <link rel="stylesheet" href="{% static 'css/owl.theme.default.min.css'%}">
+
+  <link rel="stylesheet" href="{% static 'css/jquery.fancybox.min.css'%}">
+
+  <link rel="stylesheet" href="{% static 'css/bootstrap-datepicker.css'%}">
+
+  <link rel="stylesheet" href="{% static 'fonts/flaticon/font/flaticon.css'%}">
+
+  <link rel="stylesheet" href="{% static 'css/aos.css'%}">
+  <link href="{% static 'css/jquery.mb.YTPlayer.min.css'%}" media="all" rel="stylesheet" type="text/css">
+
+  <link rel="stylesheet" href="{% static 'css/style.css'%}">
+
+
+
+</head>
+
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+
+  <div class="site-wrap">
+
+    <div class="site-mobile-menu site-navbar-target">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+
+
+    
+    <div class="header-top bg-light">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-6 col-lg-3">
+            <a href="{% url 'index'%}">
+              <img src="{% static 'images/logo1.jpg'%}" alt="Image" class="img-fluid">
+            </a>
+          </div>
+          <div class="col-lg-3 d-none d-lg-block">
+
+            <div class="quick-contact-icons d-flex">
+              <div class="icon align-self-start">
+                <span class="flaticon-placeholder text-primary"></span>
+              </div>
+              <div class="text">
+                <span class="h4 d-block">Gandhinagar</span>
+                <span class="caption-text">Kudasan and Sector 6/B</span>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-lg-3 d-none d-lg-block">
+            <div class="quick-contact-icons d-flex">
+              <div class="icon align-self-start">
+                <span class="flaticon-call text-primary"></span>
+              </div>
+              <div class="text">
+                <span class="h4 d-block">+91 76220 30763</span>
+                <span class="caption-text">Call us</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 d-none d-lg-block">
+            <div class="quick-contact-icons d-flex">
+              <div class="icon align-self-start">
+                <span class="flaticon-email text-primary"></span>
+              </div>
+              <div class="text">
+                <span class="h4 d-block">swaminarayan1808@gmail.com</span>
+                <span class="caption-text">Mail us</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 d-block d-lg-none text-right">
+              <a href="#" class="d-inline-block d-lg-none site-menu-toggle js-menu-toggle text-black"><span
+                class="icon-menu h3"></span></a>
+          </div>
+        </div>
+      </div>
+      
+
+
+      
+      <div class="site-navbar py-2 js-sticky-header site-navbar-target d-none pl-0 d-lg-block" role="banner">
+
+      <div class="container">
+        <div class="d-flex align-items-center">
+          
+          <div class="mr-auto">
+            <nav class="site-navigation position-relative text-right" role="navigation">
+              <ul class="site-menu main-menu js-clone-nav mr-auto d-none pl-0 d-lg-block">
+                <li>
+                  <a href="{% url 'index'%}" class="nav-link text-left">Home</a>
+                </li>
+                <li>
+                  <a href="{% url 'about'%}" class="nav-link text-left">About Us</a>
+                </li>
+                <li>
+                  <a href="{% url 'works'%}" class="nav-link text-left">Products</a>
+                </li>
+               
+                <li>
+                    <a href="{% url 'contact'%}" class="nav-link text-left">Contact</a>
+                  </li>
+              </ul>                                                                                                                                                                                                                                                                                          </ul>
+            </nav>
+
+          </div>
+          
+         
+        </div>
+      </div>
+
+    </div>
+    
+    </div>
+    
+
+
+
+    <div class="intro-section site-blocks-cover innerpage" style="background-image: url('images/hero_1.jpg');">
+      <div class="container">
+        <div class="row align-items-center text-center border">
+          <div class="col-lg-12 mt-5" data-aos="fade-up">
+            <h1>Steam Shower Room</h1>
+            <p class="text-white text-center">
+              <a href="{% url 'index'%}">Home</a>
+              <span class="mx-2">/</span>
+              <span>Steam Shower Room</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="site-section">
+        <div class="container">
+          {%for g in data49%}
+            <div class="row">
+                <div class="col-md-7 mb-4">
+                  
+                    <img src="{{g.image.url}}" alt="Image" class="img-fluid">
+                </div>
+                <div class="col-md-4 ml-auto">
+                    <h2 class="text-black mb-4">{{g.text1}}</h2>
+                    <p>{{g.text2}}</p>
+                    
+                    
+                    
+                </div>
+                
+            </div>
+            {%endfor%}
+        </div>
+    </div>
+    
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3">
+            <p class="mb-4"><img src="{% static 'images/logo1.jpg'%}" alt="Image" class="img-fluid"></p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae nemo minima qui dolor, iusto iure.</p>  
+            <p><a href="#">Learn More</a></p>
+          </div>
+          <div class="col-lg-3">
+            <h3 class="footer-heading"><span>Our Company</span></h3>
+            <ul class="list-unstyled">
+                <li><a href="{% url 'index'%}">Home</a></li>
+                <li><a href="{% url 'works'%}">Products</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3">
+              <h3 class="footer-heading"><span>Social Media</span></h3>
+              <ul class="list-unstyled">
+                <li><a href="https://www.facebook.com/Shree-Swaminarayan-Enterprises-110014964109240/">Facebook</a></li>
+                <li><a href="https://www.instagram.com/shreeswaminaraynenterprises/?hl=en">Instagram</a></li>
+              </ul>
+          </div>
+          <div class="col-lg-3">
+              <h3 class="footer-heading"><span>Contact</span></h3>
+              <ul class="list-unstyled">
+                  <li><a href="{% url 'about'%}">About us</a></li>
+                  <li><a href="{% url 'contact'%}">Contact Us</a></li>
+              </ul>
+          </div>
+        </div>
+
+
+        <div class="row">
+          <div class="col-12">
+            <div class="copyright">
+              Developed by <a href="#">Aditya Thakkar</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+  </div>
+  <!-- .site-wrap -->
+
+
+  <!-- loader -->
+  <div id="loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#ff5e15"/></svg></div>
+
+  <script src="{% static 'js/jquery-3.3.1.min.js'%}"></script>
+  <script src="{% static 'js/jquery-migrate-3.0.1.min.js'%}"></script>
+  <script src="{% static 'js/jquery-ui.js'%}"></script>
+  <script src="{% static 'js/popper.min.js'%}"></script>
+  <script src="{% static 'js/bootstrap.min.js'%}"></script>
+  <script src="{% static 'js/owl.carousel.min.js'%}"></script>
+  <script src="{% static 'js/jquery.stellar.min.js'%}"></script>
+  <script src="{% static 'js/jquery.countdown.min.js'%}"></script>
+  <script src="{% static 'js/bootstrap-datepicker.min.js'%}"></script>
+  <script src="{% static 'js/jquery.easing.1.3.js'%}"></script>
+  <script src="{% static 'js/aos.js'%}"></script>
+  <script src="{% static 'js/jquery.fancybox.min.js'%}"></script>
+  <script src="{% static 'js/jquery.sticky.js'%}"></script>
+  <script src="{% static 'js/jquery.mb.YTPlayer.min.js'%}"></script>
+
+
+
+
+  <script src="{% static 'js/main.js'%}"></script>
+
+</body>
+
+</html>
