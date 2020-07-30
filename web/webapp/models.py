@@ -9,13 +9,31 @@ class ultratech(models.Model):
     def __str__(self):
         return self.text1
 
-class astral(models.Model):
+class upvc1(models.Model):
     image=models.ImageField(upload_to='images/')
     text1=models.CharField(max_length=100)
     text2=models.CharField(max_length=1000)
 
     def __str__(self):
         return self.text1
+
+class cpvc(models.Model):
+    image=models.ImageField(upload_to='images/')
+    text1=models.CharField(max_length=100)
+    text2=models.CharField(max_length=1000)
+
+    def __str__(self):
+        return self.text1
+
+class drainmaster(models.Model):
+    image=models.ImageField(upload_to='images/')
+    text1=models.CharField(max_length=100)
+    text2=models.CharField(max_length=1000)
+
+    def __str__(self):
+        return self.text1
+
+
 
 class berger(models.Model):
     image=models.ImageField(upload_to='images/')

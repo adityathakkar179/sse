@@ -3,7 +3,9 @@ from .models import *
 
 # Register your models here.
 admin.site.register(ultratech)
-admin.site.register(astral)
+admin.site.register(upvc1)
+admin.site.register(cpvc)
+admin.site.register(drainmaster)
 admin.site.register(berger)
 admin.site.register(steel)
 admin.site.register(rmc)

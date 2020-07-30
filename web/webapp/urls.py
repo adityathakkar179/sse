@@ -10,7 +10,6 @@ urlpatterns=[
     path('product',views.product,name='works'),
     path('contact',views.contact,name='contact'),
     path('ultratech',views.ultratech1,name='ultratech'),
-    path('astral',views.astr,name='astral'),
     path('berger',views.berg,name='berger'),
     path('steel',views.st,name='steel'),
     path('rmc',views.rc,name='ur'),
@@ -54,6 +53,10 @@ urlpatterns=[
     path('swp',views.swpp,name='swp'),
     path('shp',views.shpp,name='shp'),
     path('steam',views.stm,name='steam'),
+    path('aupc',views.allastr,name='aupc'),
+    path('upvcc',views.upvccc,name='upvcc'),
+    path('cpv',views.cpvccc,name='cpv'),
+    path('drain',views.dm,name='drain'),
     #path('info/',views.inn),
 ]
 if settings.DEBUG:

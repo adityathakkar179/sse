@@ -165,9 +165,21 @@ def ultratech1(request):
     data=ultratech.objects.all()
     return render(request,'ultratech.html',{'data':data})
 
-def astr(request):
-    data1=astral.objects.all()
-    return render(request,'astral.html',{'data1':data1})
+
+def upvccc(request):
+    data51=upvc1.objects.all()
+    return render(request,'upvcc.html',{'data51':data51})
+
+def cpvccc(request):
+    data52=cpvc.objects.all()
+    return render(request,'cpv.html',{'data52':data52})
+    
+def dm(request):
+    data53=drainmaster.objects.all()
+    return render(request,'drain.html',{'data53':data53})
+
+def allastr(request):
+    return render(request,'aupc.html')
 
 def berg(request):
     data2=berger.objects.all()
